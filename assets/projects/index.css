@@ -39,7 +39,7 @@
 
 article.project {
   float: left;
-  width: 281px;
+  width: 25%;
   padding: 0 20px 40px;
   border-left: 1px solid #f0f0f0;
 }
@@ -51,7 +51,7 @@ article.project > .project-cover-wrapper > .cover-image-wrapper {
 }
 
 article.project > .project-cover-wrapper > .cover-image-wrapper .cover-image {
-  width: 240px;
+  max-width: 100%;
   transition: transform 0.8s;
 }
 
