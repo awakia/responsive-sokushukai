@@ -35,3 +35,14 @@ body {
   width: 270px;
   background: #f0f0f0;
 }
+
+@media only screen and (max-width: 780px) {
+
+  #main-inner #content {
+    width: 100%;
+  }
+
+  #main-inner #sidebar {
+    display: none;
+  }
+}
