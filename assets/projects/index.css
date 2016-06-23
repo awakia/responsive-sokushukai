@@ -44,6 +44,24 @@ article.project {
   border-left: 1px solid #f0f0f0;
 }
 
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  article.project {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  article.project {
+    width: calc(100% / 3);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  article.project {
+    width: 100%;
+  }
+}
+
 article.project > .project-cover-wrapper > .cover-image-wrapper {
   position: relative;
   overflow: hidden;
