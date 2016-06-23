@@ -1,0 +1,141 @@
+
+#header {
+  position: relative;
+  background: #FFF;
+  height: 61px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+#header .site-logo-wrapper {
+  float: left;
+  margin-top: 5px;
+  height: 20px;
+}
+
+#header .site-logo-wrapper .site-logo {
+  color: #404346;
+  cursor: pointer;
+}
+
+#header .site-logo-wrapper .site-logo .site-logo-title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+#header .site-logo-wrapper .site-logo .site-logo-company {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+  font-style: italic;
+  vertical-align: top;
+}
+
+#header .header-menues {
+  position: absolute;
+  top: 15px;
+  left: 150px;
+  right: 100px;
+}
+
+#header .header-menues .header-menu {
+  list-style: none;
+  float: left;
+  margin-left: 50px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#header .header-menues .header-menu.active {
+  border-bottom: 3px solid #00a4bb;
+}
+
+#header .header-menues .header-menu:hover {
+  color: #c0c3c5;
+}
+
+#header .header-menues #search-box {
+  list-style: none;
+  float: right;
+  margin-top: 3px;
+  margin-right: 20px;
+  padding-right: 30px;
+  border-right: 1px solid #f0f0f0;
+}
+
+#header .header-menues #search-box #search-box-icon {
+  color: #bbb;
+}
+
+#header .header-menues #search-box #search-bar-input {
+  margin-left: 10px;
+  width: 64px;
+  height: 22px;
+  min-height: unset;
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+  text-overflow: ellipsis;
+  outline: 0;
+  transition: 0.5s;
+}
+
+#header .header-menues #search-box #search-bar-input:focus {
+  width: 268px;
+}
+
+#header #header-avatar {
+  float: right;
+}
+
+#header #header-avatar #header-avatar-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#header #notification {
+  float: right;
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#header #notification:hover #notification-button {
+  color: #b7b9ba;
+}
+
+#header #notification #notification-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: #D1D2D3;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+#header #notification #notification-counter {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  background: #FF3333;
+  font-size: 9px;
+  color: #FFFFFF;
+  line-height: 14px;
+  text-align: center;
+}

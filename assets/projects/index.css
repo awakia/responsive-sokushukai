@@ -1,0 +1,288 @@
+
+#projects-index {
+  padding: 30px 40px;
+}
+
+#projects-index > .column-main {
+  overflow: hidden;
+}
+
+#projects-index .projects-index-sort-menu-form {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+#projects-index .categories, #projects-index .order-types {
+  float: left;
+  cursor: pointer;
+}
+
+#projects-index .categories > .selected, #projects-index .order-types > .selected {
+  font-size: 18px;
+  line-height: 25px;
+  display: inline;
+}
+
+#projects-index .categories > i, #projects-index .order-types > i {
+  color: #afcbcf;
+  margin-left: 5px;
+}
+
+#projects-index .order-types {
+  margin-left: 45px;
+}
+
+#projects-index .projects-index-list {
+  margin: 30px -20px 0;
+}
+
+
+article.project {
+  float: left;
+  width: 281px;
+  padding: 0 20px 40px;
+  border-left: 1px solid #f0f0f0;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper .cover-image {
+  width: 240px;
+  transition: transform 0.8s;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: background 0.2s;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper {
+  position: absolute;
+  right: 8px;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper.like {
+  bottom: 8px;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper.edit {
+  display: none;
+  bottom: 48px;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper.edit.editable {
+  display: block;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper > .indicator {
+  float: left;
+  width: 36px;
+  height: 18px;
+  margin-top: 7px;
+  margin-right: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  font-size: 11px;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  transform: translateX(86px);
+  transition: transform 0.3s;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper > .like-button-small {
+  float: left;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 16px;
+  transform: translateX(44px);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper > .like-button-small.like {
+  background: #d0021b;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper > .like-button-small.like .fa-heart {
+  display: inline-block;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper > .like-button-small .fa-heart {
+  margin-top: -2px;
+  display: none;
+  color: #fff;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper.edit > .indicator {
+  transition: ransform 0.3s 0.1s;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper > .hover-layer > .hover-wrapper.edit > .edit-button-small {
+  transition: ransform 0.2s 0.1s;
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper:hover .cover-image {
+  transform: scale(1.15);
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper:hover > .hover-layer {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper:hover > .hover-layer > .hover-wrapper > .indicator {
+  transform: translateX(0);
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper:hover > .hover-layer > .hover-wrapper > .like-button-small, article.project > .project-cover-wrapper > .cover-image-wrapper:hover > .hover-layer > .hover-wrapper > .edit-button-small {
+  transform: translateX(0);
+}
+
+article.project > .project-cover-wrapper > .cover-image-wrapper:hover > .hover-layer > .hover-wrapper > .like-button-small:hover, article.project > .project-cover-wrapper > .cover-image-wrapper:hover > .hover-layer > .hover-wrapper > .edit-button-small:hover {
+  transform: translateX(0) scale(1.2);
+}
+
+article.project .project-draft-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 18px;
+  padding: 0 6px;
+  font-size: 10px;
+  line-height: 16px;
+  border: solid 1px white;
+  border-radius: 2px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+article.project > .project-detail {
+  margin-top: 10px;
+}
+
+article.project > .project-detail > .title {
+  font-size: 17px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article.project > .project-detail > .title .title-inner {
+  cursor: pointer;
+}
+
+article.project > .project-detail > .title .title-inner:hover {
+  text-decoration: underline;
+}
+
+article.project > .project-detail > .project-tags {
+  height: 19px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 19px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article.project > .project-detail > .project-tags > .tag {
+  float: left;
+  color: #404346;
+  cursor: pointer;
+}
+
+article.project > .project-detail > .project-tags > .tag:hover {
+  text-decoration: underline;
+}
+
+article.project > .project-detail > .project-tags > .tag:after {
+  content: ",";
+  margin-right: 2px;
+}
+
+article.project > .project-detail > .project-tags > .tag:last-child:after {
+  content: '';
+}
+
+article.project .project-contributor {
+  position: relative;
+  margin-top: 10px;
+  height: 20px;
+}
+
+article.project .project-contributor .avatar-and-name {
+  position: relative;
+  display: block;
+  height: 20px;
+}
+
+article.project .project-contributor .avatar-and-name > .thumbnail {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+article.project .project-contributor .avatar-and-name > .thumbnail > img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+article.project .project-contributor .avatar-and-name > .name {
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 26px;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+article.project .project-contributor .avatar-and-name > .name:hover {
+  text-decoration: underline;
+}
+
+article.project > .line {
+  margin-top: 16px;
+  height: 0;
+  width: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+article.project > .project-bottom {
+  margin-top: 10px;
+}
+
+article.project > .project-bottom > .pv-count, article.project > .project-bottom .like-count {
+  float: left;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #404346;
+}
+
+article.project > .project-bottom > .pv-count {
+  margin-left: 6px;
+}
